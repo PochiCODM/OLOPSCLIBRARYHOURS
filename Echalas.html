@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIT LIBRARIES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Header fade-in">
+        <h1>LIBRARY HOURS</h1>
+        <h2>FIRST SEMESTER 2024-2025</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="collegelibrary fade-in">
+            <h2>College Library</h2>
+            <p>MONDAY – FRIDAY</p>
+            <p>7:00 AM to 5:00 PM</p>
+            <p>SATURDAYS</p>
+            <p>8:00 AM TO 12:00 NN</p>
+        </div>
+
+
+        <div class="highschool fade-in">
+            <h2>High School Library</h2>
+            <p>MONDAY – FRIDAY</p>
+            <p>6:30 AM to 8:00 PM</p>
+            <p>SATURDAYS</p>
+            <p>8:00 AM TO 12:00 NN</p>
+        </div>
+
+
+        <div class="gradeschool fade-in">
+            <h2>Grade School Library</h2>
+            <p>MONDAY – FRIDAY</p>
+            <p>6:30 AM to 5:00 PM</p>
+            <p>SATURDAYS</p>
+            <p>8:00 AM TO 12:00 NN</p>
+        </div>
+
+        <div class="preschool fade-in">
+            <h2>Pre-School Library</h2>
+            <p>MONDAY – FRIDAY</p>
+            <p>7:00 AM to 3:00 PM</p>
+            <p>SATURDAYS</p>
+            <p>8:00 AM to 12:00 NN</p>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll", function() {
+            let scrollPosition = window.scrollY; 
+            
+            
+            let scrollPercentage = scrollPosition / (document.documentElement.scrollHeight - window.innerHeight);
+            
+            
+            let gradientStart = `rgba(0, 0, 0, ${Math.min(scrollPercentage * 0.8 + 0.2, 1)})`;
+            let gradientEnd = `rgba(0, 0, 0, ${Math.min(scrollPercentage * 0.6 + 0.2, 1)})`;
+            
+            
+            document.body.style.backgroundImage = `linear-gradient(${gradientStart}, ${gradientEnd}), url('sobrang oa.jpeg')`;
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sobrang oa.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: background-image 0.3s ease-out;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 5px 0;
+    animation: fadeIn 2s ease-out;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.collegelibrary, .highschool, .gradeschool, .preschool {
+    background-color: #ffffff;
+    border: 2px solid #0a095f;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+    background-color: #f9f9f9;
+}
+
+.collegelibrary h2, .highschool h2, .gradeschool h2, .preschool h2 {
+    color: #ffffff;
+    background-color: #0a095f;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.collegelibrary p, .highschool p, .gradeschool p, .preschool p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.collegelibrary:hover, .highschool:hover, .gradeschool:hover, .preschool:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collegelibrary, .highschool, .gradeschool, .preschool {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .collegelibrary, .highschool, .gradeschool, .preschool {
+        width: 90%;
+    }
+}
